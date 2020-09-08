@@ -1,0 +1,10 @@
+https://devblogs.microsoft.com/dotnet/net-core-image-processing/
+https://adamtheautomator.com/aws-lambda-example/#How_does_a_Lambda_function_work
+
+dotnet new lambda.EmptyFunction --name ImageResizerLambdaFunction --profile default --region us-west-2
+
+dotnet add package AWSSDK.S3
+
+dotnet add package Magick.NET-Q16-AnyCPU --version 7.21.1
+
+dotnet lambda deploy-function ImageResizerLambdaFunction
